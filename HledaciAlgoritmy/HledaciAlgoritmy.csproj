@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3AFB55DB-CED6-45F3-95B6-51E8662EA329}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HledaciAlgoritmy</RootNamespace>
+    <AssemblyName>HledaciAlgoritmy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algoritmus.cs" />
+    <Compile Include="Bludiste.cs" />
+    <Compile Include="Comparation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comparation.Designer.cs">
+      <DependentUpon>Comparation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventZprava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventZprava.Designer.cs">
+      <DependentUpon>EventZprava.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nastaveni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nastaveni.Designer.cs">
+      <DependentUpon>Nastaveni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pozadi.cs" />
+    <Compile Include="Telo.cs" />
+    <Compile Include="UvodniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UvodniForm.Designer.cs">
+      <DependentUpon>UvodniForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konfigurace.cs" />
+    <Compile Include="Mapa.cs" />
+    <Compile Include="Rozhrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rozhrani.Designer.cs">
+      <DependentUpon>Rozhrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Policko.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vysvetleni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vysvetleni.Designer.cs">
+      <DependentUpon>Vysvetleni.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Comparation.resx">
+      <DependentUpon>Comparation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventZprava.resx">
+      <DependentUpon>EventZprava.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nastaveni.resx">
+      <DependentUpon>Nastaveni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UvodniForm.resx">
+      <DependentUpon>UvodniForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rozhrani.resx">
+      <DependentUpon>Rozhrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vysvetleni.resx">
+      <DependentUpon>Vysvetleni.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\route.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear-option.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear-option.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navrhar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kamena-zed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaDL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaKONECZDOLA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaKONECZHORA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaKONECZLEVA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaKONECZPRAVA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaLN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaLND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaLNP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaLP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaNIC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaNP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaNPD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaNPDL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaPD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cestaPDL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncertainty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\injustice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-knobs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pozadi2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bila.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vychozi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Varovani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Uspech.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chyba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Informace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-information-64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-settings-64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrazek1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrazek2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrazek3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obrazek4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkered-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trava.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

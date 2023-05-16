@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HledaciAlgoritmy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Vykreslovani" Type="System.String" Scope="User">
+      <Value Profile="(Default)">objekty</Value>
+    </Setting>
+    <Setting Name="_Vykreslovani" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="VychoziCesta" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CestaObr1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CestaObr2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CestaObr3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CestaObr4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BarvaCesta" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gray</Value>
+    </Setting>
+    <Setting Name="BarvaProhledany" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">192, 64, 0</Value>
+    </Setting>
+    <Setting Name="tb1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="tb2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="start" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj1.png|Start|0|True|True|1</Value>
+    </Setting>
+    <Setting Name="konec" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj2.png|Konec|0|True|False|0</Value>
+    </Setting>
+    <Setting Name="zed" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj3.png|Zed|0|False|False|0</Value>
+    </Setting>
+    <Setting Name="silnice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj4.png|Cesta|0|True|False|0</Value>
+    </Setting>
+    <Setting Name="Obj5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj5.png|Les|80|True|False|0</Value>
+    </Setting>
+    <Setting Name="Obj6" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj6.png|Voda|0|False|False|0</Value>
+    </Setting>
+    <Setting Name="Obj7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj7.png|None|0|True|False|0</Value>
+    </Setting>
+    <Setting Name="Obj8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Images\obj8.png|None|0|True|False|0</Value>
+    </Setting>
+    <Setting Name="ObrazkyObjs" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
